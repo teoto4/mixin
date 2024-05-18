@@ -1,0 +1,45 @@
+.header {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.header_conteiner {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: end;
+}
+
+.logo {
+    display: flex;
+    align-self: center;
+}
+
+.logo img {
+    cursor: pointer;
+}
+
+.header_nav {
+    display: flex;
+    justify-content: end;
+    align-self: center;
+}
+
+.header_nav ul {
+    @include fonts-style-desc (16px, 400);
+    display: flex;
+    flex-direction: row;
+    gap: 53px;
+    justify-content: center;
+
+}
+
+.header_nav ul li {
+    cursor: pointer;
+}
+
+.header_nav ul li:hover {
+    color: #1F1F1F;
+}

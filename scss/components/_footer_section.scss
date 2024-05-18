@@ -1,0 +1,39 @@
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.footer_conteiner {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+.footer_conteiner img {
+    cursor: pointer;
+    max-width: 290px;
+    max-height: 65px;
+}
+
+.footer_conteiner ul {
+    @include fonts-style-desc (16px, 300);
+    margin-top: 40px;
+    gap: 53px;
+    display: flex;
+}
+
+.footer_conteiner ul li {
+    cursor: pointer;
+}
+
+.footer_conteiner ul li:hover {
+    color: #1F1F1F;
+}
+
+.footer_conteiner p {
+    @include fonts-style-desc(14px, 300);
+    margin-top: 35px;
+    margin-bottom: 100px;
+}

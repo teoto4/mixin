@@ -1,0 +1,14 @@
+@mixin font-style-main ($size, $height) {
+    font-family: "Italiana", sans-serif;
+    font-weight: 400;
+    line-height: $height;
+    font-size: $size;
+}
+
+@mixin fonts-style-desc ($desc_size, $desc_weight) {
+    font-family: "Montserrat", sans-serif;
+    font-weight: $desc_weight;
+    line-height: 30px;
+    font-size: $desc_size;
+    color: #A2A2A2;
+}

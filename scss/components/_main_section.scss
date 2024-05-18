@@ -1,0 +1,33 @@
+.main_section {
+    display: flex;
+    justify-content: center;
+}
+
+.main_conteiner {
+    display: grid;
+    width: 80%;
+    grid-template-columns: 1fr 1fr;
+}
+
+.main_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main_text h1 {
+    @include font-style-main (90px, 106.02px);
+}
+
+.main_text p {
+    max-width: 542px;
+    @include fonts-style-desc (20px, 300);
+    margin-bottom: 40px;
+    color: #1F1F1F;
+}
+
+.button {
+    max-width: 235px;
+    @extend .main-button;
+
+}

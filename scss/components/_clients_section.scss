@@ -1,0 +1,51 @@
+.clients_section {
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+.clients_conteiner {
+    width: 80%;
+}
+
+.clients_conteiner h1 {
+    text-align: center;
+    @include font-style-main (70px, 82.46px);
+}
+
+.clients_conteiner h1 span {
+    color: #69AE96;
+}
+
+.clients_body_conteiner {
+    margin-top: 62px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.clients_body_conteiner img {
+    justify-self: center;
+}
+
+.client_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 500px;
+    @include fonts-style-desc(18px, 400);
+    color: #1F1F1F;
+}
+
+.client_name {
+    margin-top: 20px;
+    color: #1F1F1F;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.client_name_desc {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+}

@@ -1,0 +1,95 @@
+.tour_section {
+    display: flex;
+    justify-content: center;
+    min-height: 614px;
+}
+
+.tour_conteiner {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+//text
+
+.tour_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tour_info h3 {
+    @include font-style-main(70px, 82.46px);
+    margin-bottom: 224px;
+}
+
+.tour_info a {
+    @include fonts-style-desc(20px, 400);
+    text-decoration: underline;
+    color: #69AE96;
+}
+
+.tour_info p {
+    @include fonts-style-desc(20px, 400);
+    color: #1F1F1F;
+}
+
+//forma
+.tour_form button {
+    border: none;
+}
+
+.tour_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tour_form input {
+    margin-top: 16px;
+    border: 1px solid #C9CCD4;
+    border-radius: 6px;
+    width: 570px;
+    height: 60px;
+    padding-left: 14px;
+}
+
+.tour_form input:first-child {
+    margin-top: 0px;
+}
+
+.tour_form input:last-child {
+    min-height: 132px;
+}
+
+.tour_form input::placeholder {
+    @include fonts-style-desc(16px, 300);
+}
+
+.tour_form input:focus:valid {
+    border: 1px solid green;
+}
+
+.write_something {
+    margin-top: 16px;
+    min-height: 188px;
+    border-radius: 6px;
+    border: 1px solid #C9CCD4;
+    width: 570px;
+    height: 132px;
+    padding-left: 14px;
+    padding-top: 18px;
+}
+
+.write_something::placeholder {
+    @include fonts-style-desc (16px, 300);
+    transform: translateY(-7px);
+}
+
+.form_button {
+    margin-top: 30px;
+    max-width: 288px;
+    @extend .main-button;
+}
